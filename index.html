@@ -4,41 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <title>Nishiyama Ayami Portfolio</title>
 </head>
-<header>
-    <nav id="navi-pc">
-        <div>
-            <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Skils</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="navi-sp">
-        <div>
-            <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Skils</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
 <body>
-    <div class="wrapper">
-        <div id="main-pc">Main PC</div>
-        <div id="main-sp">Main Mobile</div>
-        <div class="aboutme">About Me</div>
-        <div class="skils">Skils</div>
-        <div class="works">Works</div>
-        <div class="contact">Contact</div>
-    </div>
+    <header>
+        <nav id="navi-pc">
+            <div>
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Skils</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="navi-sp">
+            <div>
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Skils</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div id="main-pc">
+                <div id=main-pc-left>
+                    <h2>Ayami<br>Nishiyama</h2>
+                </div>
+            </div>
+            <div id="main-sp"></div>
+            
+            <div id="aboutme">
+                <img src="img/Aboutme.svg" class="section-title">
+                <div class="about-inner">
+                    <div class="about-left">
+                        <img src="#" id="person-img">
+                        <a href="#"><img src="img/Twitter social icons - circle - blue.svg" class="snsicon"></a>
+                        <a href="#"><img src="img/GitHub-Mark-120px-plus.png" class="snsicon"></a>
+                        <div id="catch-copy">
+                            <p>
+                                <span>私の名前</span><br>
+                                私はこんな人です。<br>
+                                お見知りおきください。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        こっちが年表
+                    </div>
+                </div>
+            </div>
+            <div class="skils">
+                <img src="img/Skils.svg" class="section-title">
+                <div id="skilgroup">
+                    <div class="skillist">
+                            <img src="#" class="skilimg">
+                            <p class="skilname">HTML</p>
+                            <p>なんかかく</p>
+                    </div>
+                    <div class="skillist">
+                            <img src="#" class="skilimg">
+                            <p class="skilname">CSS</p>
+                    </div>
+                    <div class="skillist">
+                            <img src="#" class="skilimg">
+                            <p class="skilname">Java Script</p>
+                    </div>
+                    <div class="skillist">
+                            <img src="#" class="skilimg">
+                            <p class="skilname">Photoshop</p>
+                    </div>
+                    <div class="skillist">
+                            <img src="#" class="skilimg">
+                            <p class="skilname">Illustrator</p>
+                    </div>
+                </div>
+            </div>
+            <div class="works">
+                <img src="img/Works.svg" class="section-title">
+            </div>
+            <div class="contact">
+                <img src="img/Contact.svg" class="section-title">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>&copy; Ayami Nishiyama</p>
+        </div>
+    </footer>
 </body>
-<footer>
-    <p>&copy; Ayami Nishiyama</p>
-</footer>
 </html>

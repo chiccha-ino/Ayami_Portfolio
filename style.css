@@ -9,6 +9,11 @@ a {
     text-decoration: none;
 }
 
+body {
+    margin: 50px 0 0 0;
+    background-color: #d8e3e4;
+    font-family: 'Oswald', "Helvetica", "メイリオ", "游ゴシック", sans-serif;
+}
 
 header {
     background-color: #5b6064;
@@ -36,11 +41,7 @@ header {
     margin: 0;
 }
 
-body {
-    margin: 50px 0 0 0;
-    background-color: #d8e3e4;
 
-}
 
 .wrapper {
     width: 900px;
@@ -49,26 +50,116 @@ body {
     background-color: #a6a8ae;
 }
 
+h2 , h3{
+    margin: 0;
+}
+
 #main-pc {
     width: 100%;
     height: 500px;
     margin-top: 50px;
-    
+ 
+}
+
+#main-pc-left {
+    width: 30%;
+    height: 100%;
+    left: 0;
+    background-color: #FFF;
 }
 
 #main-sp {
     display: none;
 }
 
-.aboutme {
+
+#aboutme {
     width: 100%;
-    height: 500px;
+    height: 700px;
     background-color: #9b8f84;
 }
 
+.section-title {
+    width: 300px;
+    height: 80px;
+    margin-right: calc(100% - 300px);
+}
+
+.about-inner {
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-left {
+    width: 40%;
+    height: 100%;
+}
+
+#person-img {
+    width: 100px;
+    height: 100px;
+    background-color: #FFF;
+    margin: 0 0 20px 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.snsicon { 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 0 0 10px;
+    vertical-align: top;
+}
+
+#catch-copy {
+    width: 100%;
+}
+
+#catch-copy p {
+    margin: 0 0 0 20px;
+}
+
+#catch-copy p span {
+    font-weight: bold;
+}
+
+.about-right {
+    width: 40%;
+    height: 100%;
+    background-color:#a6a8ae;
+}
+
+
 .skils {
     width: 100%;
-    height: 500px;
+    height: 400px;
+}
+
+#skilgroup {
+    display: flex;
+    margin: 0 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skillist {
+    width: 150px;
+    /*display: inline-block;*/
+}
+
+.skilimg {
+    width:150px;
+    height:150px;
+    background-color: #e2eeeb;
+}
+
+.skilname {
+    margin: 10px 0 0 0 ;
 }
 
 .works {
@@ -82,8 +173,10 @@ body {
     height: 500px;
 }
 
-footer {
+footer div{
     height: 50px;
+    width: 100%;
+    bottom: 0;
     background-color: #5b6064;
 }
 
