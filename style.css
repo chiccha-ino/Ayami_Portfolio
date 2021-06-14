@@ -5,18 +5,22 @@ ul {
 }
 
 a {
-    color : #000000;
+    color : #f7fbfe;
     text-decoration: none;
+}
+
+p {
+    color: #140F14;
 }
 
 body {
     margin: 50px 0 0 0;
-    background-color: #d8e3e4;
+    background-color: #f7fbfe;
     font-family: 'Oswald', "Helvetica", "メイリオ", "游ゴシック", sans-serif;
 }
 
 header {
-    background-color: #5b6064;
+    background-color: #332940;
     width: 100%;
     top: 0;
     left: 0;
@@ -29,43 +33,73 @@ header {
 }
 
 #navi-pc {
-    width: 900px;
+    max-width: 1200px;
     height: 50px;
-    background-color: #5b6064;
+    background-color: #332940;
     margin: 0 auto;
 }
 
 #navi-pc ul {
+    height: 100%;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-around;
-    margin: 0;
+    align-items: center;
+
 }
 
+#navi-pc li {
+    width: 130px;
+    text-align: center;
+    height: 100%;
+}
 
+#navi-pc li a{
+    height: 100%;
+    line-height: 45px;
+    display: flex;
+    justify-content: center;
+}
 
 .wrapper {
-    width: 900px;
+    max-width: 1200px;
     height: auto;
     margin: 0 auto ;
-    background-color: #a6a8ae;
+    /*background-color: #a6a8ae;*/
 }
 
 h2 , h3{
     margin: 0;
+    color: #140F14;
+    font-size: 50px;
 }
 
 #main-pc {
     width: 100%;
-    height: 500px;
+    height: 600px;
     margin-top: 50px;
- 
+    position: relative;
+    background-color: #f7fbfe;
 }
 
 #main-pc-left {
-    width: 30%;
-    height: 100%;
+    width: 285px;
+    height: 285px;
     left: 0;
-    background-color: #FFF;
+    bottom: 100px;
+    position: absolute;
+    background-color: #f5cd14;
+    border-radius: 80% 30% 50% 50%/50%;
+}
+
+#main-pc-left h2 {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 17%;
+    left: 20px;
+    font-size: 50px;
 }
 
 #main-sp {
@@ -76,18 +110,30 @@ h2 , h3{
 #aboutme {
     width: 100%;
     height: 700px;
-    background-color: #9b8f84;
+    /*background-color: #9b8f84;*/
 }
 
 .section-title {
     width: 300px;
     height: 80px;
-    margin-right: calc(100% - 300px);
+    position: relative;
+    margin: 0 0 50px 20px;
+}
+
+.section-title::after {
+    background-color: #f5cd14;
+    position: absolute;
+    top: 40px;
+    left: -6px;
+    width: 90%;
+    height: 60%;
+    content: '';
+    z-index: -2;
 }
 
 .about-inner {
     width: 100%;
-    height: calc(100% - 80px);
+    height: calc(100% - 130px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -97,6 +143,7 @@ h2 , h3{
     width: 40%;
     height: 100%;
 }
+
 
 #person-img {
     width: 100px;
@@ -127,21 +174,77 @@ h2 , h3{
     font-weight: bold;
 }
 
+
 .about-right {
-    width: 40%;
-    height: 100%;
-    background-color:#a6a8ae;
+    width: 80%;
+    margin: 20px;
+    position:relative;
 }
 
+.circle-1 {
+    width: 48%;
+    max-width: 500px;
+    height: 80%;
+    left: 25%;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #f5cd14;
+    border-radius: 54% 53% 56% 47%;
+    border: solid 9px #f5cd14;
+    animation: border-animation 60s infinite linear;
+}
 
-.skils {
+.circle-2 {
+    width: 57%;
+    max-width: 500px;
+    height: 81%;
+    top: 6%;
+    left: 35%;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #f5cd14;
+    border-radius: 87% 66% 60% 64%;
+    border: solid 9px #f5cd14;
+    animation: border-animation 48s infinite linear;
+}
+
+.circle-3 {
+    width: 70%;
+    /* max-width: 700px; */
+    min-width: 500px;
+    height: 83%;
+    left: 23%;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #FFF;
+    border-radius: 80% 30% 50% 50%/50%;
+    border: solid 9px #f5cd14;
+}
+
+/* Animation */
+@keyframes border-animation {
+  to { transform: rotate(360deg); }
+}
+
+.profile {
+    top: 22%;
+    width: 52%;
+    /* max-width: 700px; */
+    /* min-width: 500px; */
+    height: 59%;
+    left: 35%;
+    position: absolute;
+}
+    
+#skils {
     width: 100%;
-    height: 400px;
+    height: 600px;
 }
 
 #skilgroup {
+    height: calc(100% - 130px);
+    box-sizing: border-box;
     display: flex;
-    margin: 0 20px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -149,38 +252,68 @@ h2 , h3{
 
 .skillist {
     width: 150px;
+    text-align: center;
+    margin: 50px 0 0 0;
     /*display: inline-block;*/
 }
 
 .skilimg {
-    width:150px;
-    height:150px;
-    background-color: #e2eeeb;
+    width:110px;
+    height:110px;
+    /*background-color: #e2eeeb;*/
 }
 
 .skilname {
-    margin: 10px 0 0 0 ;
+    margin: 25px 0 0 0;
+    font-size: 20px;
 }
 
-.works {
+#works {
+    width: 100%;
+    height: 800px;
+}
+
+#worksgroup {
+    height: calc(100% - 130px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+.worklist {
+    width : 25%;
+    text-align: center;
+}
+
+.workimg {
+    width: 100%;
+    min-width: 110px;
+    height: 150px; /*後でautoにする*/
+}
+
+#contact {
     width: 100%;
     height: 500px;
-    background-color: #9b8f84;
 }
 
-.contact {
-    width: 100%;
-    height: 500px;
-}
-
-footer div{
+footer {
     height: 50px;
     width: 100%;
     bottom: 0;
-    background-color: #5b6064;
+    background-color: #332940;
 }
 
 footer p {
+    height: 100%;
     margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
+    color: #f7fbfe;
 }
