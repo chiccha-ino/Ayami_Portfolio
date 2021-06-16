@@ -39,13 +39,13 @@
                 <h2  class="section-title">About Me</h2>
                 <div class="about-inner">
                     <div class="about-left">
-                        <img src="#" id="person-img">
-                        <a href="#"><img src="img/Twitter social icons - circle - blue.svg" class="snsicon"></a>
-                        <a href="#"><img src="img/GitHub-Mark-120px-plus.png" class="snsicon"></a>
+                        <img src="img/profileimg.png" id="person-img" alt="personimg">
+                        <a href="#"><img src="img/Twittersocialicons-circle-blue.svg" class="snsicon" alt="twitter"></a>
+                        <a href="#"><img src="img/GitHub-Mark-120px-plus.png" class="snsicon" alt="github"></a>
                         <div id="catch-copy">
                             <p>
                                 <span>ニシヤマ　アヤミ</span><br>
-                                夫・娘（5）・息子（0）の四人暮らし。<br>
+                                夫・娘（５）・息子（０）の４人暮らし。<br>
                                 猫を２匹飼っています。
                             </p>
                         </div>
@@ -67,19 +67,19 @@
                 <h2  class="section-title">Skils</h2>
                 <div id="skilgroup">
                     <div class="skillist">
-                        <img src="img/HTML5_Logo.svg" class="skilimg">
+                        <img src="img/HTML5_Logo.svg" class="skilimg" alt="HTML5">
                         <p class="skilname">HTML</p>
                     </div>
                     <div class="skillist">
-                        <img src="img/css-3.svg" class="skilimg">
+                        <img src="img/css-3.svg" class="skilimg" alt="CSS3">
                         <p class="skilname">CSS</p>
                     </div>
                     <div class="skillist">
-                        <img src="#" class="skilimg">
-                        <p class="skilname">Java Script</p>
+                        <img src="img/jskari.png" class="skilimg" alt="Javascript">
+                        <p class="skilname">JavaScript</p>
                     </div>
                     <div class="skillist">
-                        <img src="#" class="skilimg">
+                        <img src="img/new-php-logo.svg" class="skilimg" alt="PHP">
                         <p class="skilname">PHP</p>
                     </div>
                     
@@ -93,15 +93,15 @@
                 <h2  class="section-title">Works</h2>
                 <div id="worksgroup">
                     <div class="worklist">
-                        <img src="#" class="workimg">
+                        <img src="img/workskari.png" class="workimg" alt="work1">
                         <p class="workname">Works 1</p>
                     </div>
                     <div class="worklist">
-                        <img src="#" class="workimg">
+                        <img src="img/workskari.png" class="workimg" alt="work2">
                         <p class="workname">Works 2</p>
-                    </div>
+                    </div>  
                     <div class="worklist">
-                        <img src="#" class="workimg">
+                        <img src="img/workskari.png" class="workimg" alt="work3">
                         <p class="workname">Works 3</p>
                     </div>
                 </div>
@@ -109,11 +109,55 @@
             </div>
             <div id="contact">
                 <h2  class="section-title">Contact</h2>
+                <div class="info-form">
+                    <div id="iferror">
+                        <p>必須欄を入力してください。</p>
+                    </div>
+                    <div class="form">
+                        <p>会社名</p>
+                        <input type="text" class="input-form">
+                    </div>
+                    <div class="form">
+                        <p>氏名</p>
+                        <input type="text" class="input-form">
+                    </div>
+                    <div class="form">
+                        <p>電話番号</p>
+                        <input type="text" class="input-form">
+                    </div>
+                    <div class="form">
+                        <p>メールアドレス</p>
+                        <input type="text" class="input-form">
+                    </div>
+                    <div class="form">
+                        <p>メールアドレス再確認</p>
+                        <input type="text" class="input-form">
+                    </div>
+                    <div class="form">
+                        <p>お問い合わせ種類</p>
+                        <div class="radio-group">
+                            <div>
+                                <input type="radio" class="input-radio" name="infotype" value="job">お仕事のご相談
+                            </div>
+                            <div>
+                                <input type="radio" class="input-radio" name="infotype" value="reclute">リクルート
+                            </div>
+                            <div>
+                                <input type="radio" class="input-radio" name="infotype" value="other">その他
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <p>お問い合わせ内容</p>
+                        <textarea class="text-form"></textarea>
+                    </div>
+                    <input type="submit" id="info-send" value="送信内容を確認">
+                </div>
             </div>
         </div>
     </main>
     <footer>
-            <p>&copy; Ayami Nishiyama</p>
+        <p>&copy; Ayami Nishiyama</p>
     </footer>
 </body>
 </html>

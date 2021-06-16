@@ -152,6 +152,9 @@ h2 , h3{
     margin: 0 0 20px 20px;
     display: inline-block;
     vertical-align: top;
+    border-radius: 100%;
+    border: solid 5px #f5cd14;
+    box-sizing: border-box;
 }
 
 .snsicon { 
@@ -258,8 +261,8 @@ h2 , h3{
 }
 
 .skilimg {
-    width:110px;
-    height:110px;
+    width: 110px;
+    height: 110px;
     /*background-color: #e2eeeb;*/
 }
 
@@ -286,18 +289,100 @@ h2 , h3{
 
 .worklist {
     width : 25%;
+    min-width: 110px;
     text-align: center;
 }
 
 .workimg {
     width: 100%;
     min-width: 110px;
-    height: 150px; /*後でautoにする*/
+    height: auto;
 }
 
 #contact {
     width: 100%;
-    height: 500px;
+    height: 800px;
+}
+
+.info-form {
+    height: calc(100% - 130px);
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 700px;
+}
+
+#iferror {
+    width: 100%;
+    height: 50px;
+}
+
+#iferror p {
+    display:none;
+    color: red;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+.form p {
+    margin: 0;
+    width: 240px;
+}
+
+.form p:after {
+    display: inline-block;
+    text-align: center;
+    width: 57px;
+    content: "必須";
+    margin-left: 8px;
+    font-size: 14px;
+    background-color: #f5cd14;
+    border-radius: 6px;
+}
+
+.input-form {
+    width: 400px;
+    height: 30px;
+    margin: 0 0 0 50px;
+    border-radius: 5px;
+    border: solid 1px #CCC;
+}
+
+.radio-group {
+    height: 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.input-radio {
+    margin-right: 8px;
+}
+
+
+
+.text-form {
+    margin-left: 50px;
+    width: 400px;
+    height: 100px;
+    border-radius: 5px;
+    border: solid 1px #CCC;
+}
+
+#info-send {
+    display: block;
+    border: none;
+    border-bottom: 5px solid #CCC100;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #f5cd14;
+    margin: 0 0 0 auto;
 }
 
 footer {
