@@ -14,6 +14,7 @@ p {
 }
 
 body {
+    width: 100%;
     margin: 50px 0 0 0;
     background-color: #f7fbfe;
     font-family: 'Oswald', "Helvetica", "メイリオ", "游ゴシック", sans-serif;
@@ -316,6 +317,7 @@ h2 , h3{
 #skils {
     width: 100%;
     height: auto;
+    padding-bottom: 60px;
 }
 
 #skilgroup {
@@ -347,7 +349,7 @@ h2 , h3{
 
 #works {
     width: 100%;
-    height: 800px;
+    height: auto;
 }
 
 #worksgroup {
@@ -357,6 +359,7 @@ h2 , h3{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-bottom: 60px;
 }
 
 
@@ -369,13 +372,41 @@ h2 , h3{
 
 .workimg {
     width: 100%;
-    min-width: 110px;
     height: auto;
 }
 
+.workname {
+    margin: 10px 0 20px 0;
+}
+
+@media screen and (max-width: 480px) { 
+    #skils {
+        padding-bottom: 20px;
+    }
+
+    #worksgroup {
+        height: calc(100% - 130px);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .worklist {
+        width: calc(100% - 40px);
+        min-width: initial;
+        text-align: center;
+    }
+    
+}
+
+
 #contact {
     width: 100%;
-    height: 800px;
+    height: auto;
 }
 
 .info-form {
@@ -458,6 +489,50 @@ h2 , h3{
     background-color: #f5cd14;
     margin: 0 0 0 auto;
 }
+
+@media screen and (max-width: 480px) { 
+    .info-form {
+        width: 100vw;
+    }
+    
+    .form {
+        flex-direction: column;
+        margin: 20px;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 80px;
+    }
+    
+    div.form:nth-of-type(n+7) {
+        height: 160px;
+    }    
+    
+    .input-form {
+        width: calc(100vw - 40px);
+        height: 30px;
+        margin: 0;
+        border-radius: 5px;
+        border: solid 1px #CCC;
+    }
+    
+    .radio-group {
+        height: 100px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px;
+    }
+    
+    .text-form {
+        width: calc(100vw - 40px);
+        margin: 0;
+        height: 110px;
+    }
+    
+}
+
+
 
 footer {
     height: 50px;
