@@ -14,7 +14,7 @@ p {
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     margin: 50px 0 0 0;
     background-color: #f7fbfe;
     font-family: 'Oswald', "Helvetica", "メイリオ", "游ゴシック", sans-serif;
@@ -22,7 +22,7 @@ body {
 
 header {
     background-color: #332940;
-    width: 100%;
+    width: 100vw;
     top: 0;
     left: 0;
     position: fixed;
@@ -54,6 +54,8 @@ header {
     width: 130px;
     text-align: center;
     height: 100%;
+    background-color: #332940;
+
 }
 
 #navi-pc li a{
@@ -61,7 +63,33 @@ header {
     line-height: 45px;
     display: flex;
     justify-content: center;
+    position: relative;
 }
+
+#navi-pc li a:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  content: '';
+  background-color: #594d69;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform .3s;
+}
+#navi-pc li a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+#navi-pc li a:hover {
+    color: #140F14;
+    transition: all 0.3s ease 0s;
+}
+
+
 
 .wrapper {
     max-width: 1200px;
