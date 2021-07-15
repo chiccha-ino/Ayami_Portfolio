@@ -66,20 +66,21 @@ header {
     position: relative;
 }
 
-#navi-pc li a:after {
+#navi-pc li:before {
   position: absolute;
   top: 0;
-  right: 0;
+  /*right: 0;*/
   bottom: 0;
-  left: 0;
+  /*left: 0;*/
   z-index: 0;
   content: '';
   background-color: #594d69;
   transform-origin: right top;
   transform: scale(0, 1);
   transition: transform .3s;
+  width: 130px;
 }
-#navi-pc li a:hover::after {
+#navi-pc li:hover::before {
   transform-origin: left top;
   transform: scale(1, 1);
 }
